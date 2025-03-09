@@ -238,3 +238,36 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+main .categories {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.categories .category {
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.categories .category:hover {
+  background: var(--light-blue);
+}
+
+@media (max-width: 1200px) {
+  
+}
